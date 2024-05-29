@@ -24,6 +24,4 @@ app.use("/api/auth", authController);
 app.use("/api/items", itemController);
 app.use("/api/users", adminAuthorization, userController);
 
-app.listen(PORT, () => {
- console.log(`App listening on port ` + PORT)
-})
+module.exports = app;
