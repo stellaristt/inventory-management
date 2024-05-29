@@ -1,5 +1,14 @@
 {
+    "version": 2,
     "rewrites": [
-      { "source": "/(.*)", "destination": "/src" }
+        { "source": "/(.*)", "destination": "/src" }
+    ],
+    "headers": [
+        {
+          "source": "/(.*)",
+          "headers": [
+            { "key": "Access-Control-Allow-Origin", "value": "*" }
+          ]
+        }  
     ]
-  }
+}
