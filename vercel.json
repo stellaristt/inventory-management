@@ -9,6 +9,12 @@
           "headers": [
             { "key": "Access-Control-Allow-Origin", "value": "*" }
           ]
-        }  
+        } ,
+        {
+            "source": "/inventory-management-mgl5.vercel.app/(.*)",
+            "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "*" }
+            ]
+          } 
     ]
 }
