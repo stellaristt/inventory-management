@@ -24,4 +24,4 @@ app.use("/api/auth", authController);
 app.use("/api/items", itemController);
 app.use("/api/users", adminAuthorization, userController);
 
-module.exports = app;
+export default app;
